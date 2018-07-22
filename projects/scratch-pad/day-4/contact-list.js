@@ -75,10 +75,11 @@ function makeContactList() {
         for (var i = 0; i < contacts.length; i++) {
             //remove object from contact list
             if (contacts[i] === contact) {
-                contacts.splice();
+                return contacts.splice(contacts, 1);
             }
         }
-    }
+    },
+    
 }
 }
 
